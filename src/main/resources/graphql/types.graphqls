@@ -1,0 +1,8 @@
+type Enemy {
+    name: String!
+    drops: [Item!]!
+}
+
+type Item {
+    name: String!
+}
