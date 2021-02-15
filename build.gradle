@@ -12,6 +12,14 @@ repositories {
 	mavenCentral()
 }
 
+jar {
+	manifest {
+		attributes(
+				"Main-Class": "dev.punchcafe.gqltemplate.GraphqlTemplateApplication"
+		)
+	}
+}
+
 dependencies {
 	implementation 'com.graphql-java-kickstart:graphql-spring-boot-starter:11.0.0'
 
